@@ -1,0 +1,14 @@
+fastapi                 # FastAPI 웹 프레임워크
+uvicorn                 # 비동기 웹 서버(FastAPI 실행용)
+SQLAlchemy              # python 객체를 데이터베이스 테이블과 매핑(ORM)
+psycopg2-binary         # Python이 PostgreSQL과 연동될 수 있도록 해주는 어댑터
+python-dotenv           # .env 파일에 정의된 값을 환경 변수로 등록해주는 패키지
+jinja2                  # 파이썬 기반 웹 프레임워크에 사용되는 템플릿 엔진
+python-multipart        # 클라이언트가 전송한 multipart/form-data 형식의 데이터를 파싱
+numpy==2.0.2
+pandas==2.2.2
+matplotlib==3.10.0
+seaborn==0.13.2
+tensorflow==2.19.0
+scikit-learn==1.6.1
+joblib==1.5.2

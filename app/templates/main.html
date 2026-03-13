@@ -1,0 +1,16 @@
+{# 기본 템플릿(base.html)을 확장하여 메인 페이지 구성 #}
+{% extends "base.html" %}
+
+{# 메인 페이지 제목
+   {% block title %} 부분에 title 삽입
+   {{ title }}: main.py에서 전달된 변수
+#}
+{% block title %}{{ title }}{% endblock %}
+
+{# 메인 페이지 콘텐츠
+   {% block content %} 부분에 콘텐츠 삽입
+   {{ message }}: main.py에서 전달된 변수
+#}
+{% block content %}
+	<h1>{{ message }}</h1>
+{% endblock %}

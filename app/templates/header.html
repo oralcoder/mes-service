@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">MES</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+				<!-- 생산관리 드롭다운 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarWork" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            생산관리
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarWork">
+            <li><a class="dropdown-item" href="/work/orders">작업지시</a></li>
+            <li><a class="dropdown-item" href="/work/progress">공정진행</a></li>
+            <li><a class="dropdown-item" href="/work/results">생산실적</a></li>
+          </ul>
+        </li>
+        <!-- 품질관리 드롭다운 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarQuality" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            품질관리
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarQuality">
+            <li><a class="dropdown-item" href="/quality/inspections">품질검사 계획</a></li>
+            <li><a class="dropdown-item" href="/quality/results">품질검사 결과</a></li>
+          </ul>
+        </li>
+        <!-- 설비관리 드롭다운 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarEquipment" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            설비관리
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarEquipment">
+            <li><a class="dropdown-item" href="/equipment/sensor">센서 데이터</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

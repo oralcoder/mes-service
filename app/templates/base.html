@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {# 기본 템플릿: Bootstrap 포함, 헤더 포함, 블록 정의 #}
+  <title>{% block title %}MES{% endblock %}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-3">
+  {# header.html(상단 메뉴) 포함 #}
+  {% include "header.html" %}
+  {# 콘텐츠 블록(product.html, equipment.html 등 다른 페이지들이 삽입될 자리) #}
+  {% block content %}{% endblock %}
+  {# Bootstrap JS 포함 #}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
