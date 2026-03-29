@@ -15,6 +15,7 @@ SERVER_URL = os.getenv("SERVER_URL", "http://server:8000")
 ENDPOINT = f"{SERVER_URL}/equipment/sensor"
 INTERVAL = int(os.getenv("INTERVAL", "10"))  # 초 단위
 CSV_PATH = "/app/data/equipment_sensor_data.csv"
+START_ROW  = int(os.getenv("START_ROW", "0")) 
 
 def main():
     logger.info("SCADA 시뮬레이터 시작")
@@ -27,6 +28,7 @@ def main():
     # CSV 데이터 로드
     try:
         df = pd.read_csv(CSV_PATH)
+        df = df.iloc[START_ROW:]
     except Exception as e:
         logger.error(f"CSV 파일 로드 실패: {e}")
         return
