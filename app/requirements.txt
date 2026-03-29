@@ -1,4 +1,5 @@
-fastapi                 # FastAPI 웹 프레임워크
+fastapi  == 0.111.0     # FastAPI 웹 프레임워크
+starlette==0.37.2
 uvicorn                 # 비동기 웹 서버(FastAPI 실행용)
 SQLAlchemy              # python 객체를 데이터베이스 테이블과 매핑(ORM)
 psycopg2-binary         # Python이 PostgreSQL과 연동될 수 있도록 해주는 어댑터
